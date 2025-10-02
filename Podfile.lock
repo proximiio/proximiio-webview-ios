@@ -1,0 +1,42 @@
+PODS:
+  - CrystDBCipher (0.1.12):
+    - SQLCipher
+  - DarklyEventSource (4.1.1)
+  - Proximiio (5.3.0):
+    - CrystDBCipher
+    - DarklyEventSource
+  - ProximiioProcessor (0.23.0):
+    - Proximiio
+    - SwiftyJSON
+  - SQLCipher (4.10.0):
+    - SQLCipher/standard (= 4.10.0)
+  - SQLCipher/common (4.10.0)
+  - SQLCipher/standard (4.10.0):
+    - SQLCipher/common
+  - SwiftyJSON (5.0.2)
+
+DEPENDENCIES:
+  - CrystDBCipher
+  - Proximiio (= 5.3.0)
+  - ProximiioProcessor
+
+SPEC REPOS:
+  trunk:
+    - CrystDBCipher
+    - DarklyEventSource
+    - Proximiio
+    - ProximiioProcessor
+    - SQLCipher
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CrystDBCipher: 5aa287d612edbc1e596bb90f5aeeedd3a13b7e7a
+  DarklyEventSource: 6df384dcdb211d2b6bfbbe93a3148bd25567dd61
+  Proximiio: 4b48c80a1dc977efb97dfbf48220b424a38c8429
+  ProximiioProcessor: e162aa5fe62e723b41983915ac220229c0e96e28
+  SQLCipher: eb79c64049cb002b4e9fcb30edb7979bf4706dfc
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
+
+PODFILE CHECKSUM: b0656632516a6ee7c734e236ed63054e015fc6bc
+
+COCOAPODS: 1.16.2

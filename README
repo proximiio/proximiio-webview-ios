@@ -1,0 +1,5 @@
+# Proximi.io IOS Native WebView Demo
+
+## Usage
+
+replace "INSERT_PROXIMIIO_APPLICATION_TOKEN" and "INSERT_MAP_URL" in ProximiioWebViewDemo/ContentView.swift
