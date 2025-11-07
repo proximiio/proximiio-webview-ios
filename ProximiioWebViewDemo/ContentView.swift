@@ -1,6 +1,7 @@
 import SwiftUI
 import WebKit
 import Proximiio
+import ProximiioProcessor
 import CoreMotion
 
 struct WebView: UIViewRepresentable {
@@ -78,6 +79,10 @@ class ProximiioManager: NSObject, ObservableObject, ProximiioDelegate {
         instance.requestPermissions(true)
         
         let token = "INSERT_PROXIMIIO_APPLICATION_TOKEN"
+
+        let pdr = ProximiioPDRProcessor()
+        pdr.threshold = 7
+        ProximiioLocationManager.shared().addProcessor(pdr, avoidDuplicates: true)
         
         instance.setBufferSize(kProximiioBufferExtraLarge)
         instance.auth(withToken: token) { state in
