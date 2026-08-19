@@ -7,366 +7,341 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3997723BA7A4A1E922B134D /* Pods_ProximiioWebViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B336DA41F0AD1E584875FB /* Pods_ProximiioWebViewDemo.framework */; };
+		015E48D499A1CEDF669FB748 /* ProximiioWebViewDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC76B2A4D2DE9478A98B9138 /* ProximiioWebViewDemoUITestsLaunchTests.swift */; };
+		198BFF904F1E4E12D0C44832 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FC1BE7815D7A2F5F9F6838 /* Preview Assets.xcassets */; };
+		1A2477900A5FA828F98AEF88 /* ProximiioWebViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5238BB078011F31F469ED1 /* ProximiioWebViewDemoUITests.swift */; };
+		4A8845D9DFB90FB785C90ADC /* ProximiioWebViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28304828AAEE893FD16EEE8F /* ProximiioWebViewDemoTests.swift */; };
+		77937F10DBD4B11F3795D273 /* ProximiioWebViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C40729F60D4A76AF917E0C /* ProximiioWebViewDemoApp.swift */; };
+		A6CD3D413DB889197EFEFCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CD40E900272BD2498D56FE /* Assets.xcassets */; };
+		B1444549C71B61FC830D3E8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577FB2CAC94E69E3220B03C5 /* ContentView.swift */; };
+		F8F5B06C48C6BB959A319AA1 /* Proximiio in Frameworks */ = {isa = PBXBuildFile; productRef = A2DB13BE793B3BD35CF3C66F /* Proximiio */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		61B71CC72E818F9300BF958A /* PBXContainerItemProxy */ = {
+		94D6D581870838079793E3A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61B71CAE2E818F9100BF958A /* Project object */;
+			containerPortal = 80873026DC658B7481B1B274 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61B71CB52E818F9100BF958A;
+			remoteGlobalIDString = 4886AEBD6BA8D7CC81942E48;
 			remoteInfo = ProximiioWebViewDemo;
 		};
-		61B71CD12E818F9300BF958A /* PBXContainerItemProxy */ = {
+		C9EA51F27019FDEA65A0429D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 61B71CAE2E818F9100BF958A /* Project object */;
+			containerPortal = 80873026DC658B7481B1B274 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 61B71CB52E818F9100BF958A;
+			remoteGlobalIDString = 4886AEBD6BA8D7CC81942E48;
 			remoteInfo = ProximiioWebViewDemo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		616265B72E81939A00F3E5E0 /* Proximiio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Proximiio.xcframework; path = Pods/Proximiio/Pod/Proximiio.xcframework; sourceTree = "<group>"; };
-		616265BB2E8193A100F3E5E0 /* CrystDBCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		616265DC2E81946100F3E5E0 /* CrystDBCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6162661A2E81956900F3E5E0 /* CrystDBCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B71CB62E818F9100BF958A /* ProximiioWebViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProximiioWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B71CC62E818F9300BF958A /* ProximiioWebViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximiioWebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61B71CD02E818F9300BF958A /* ProximiioWebViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProximiioWebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61EC4AF22E819FCD009A8A26 /* CrystDBCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61EC4B612E81B33E009A8A26 /* CrystDBCipher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CrystDBCipher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79B336DA41F0AD1E584875FB /* Pods_ProximiioWebViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProximiioWebViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AB71E657523D131222AED4B /* Pods-ProximiioWebViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximiioWebViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-ProximiioWebViewDemo/Pods-ProximiioWebViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		B1AADB0BCFC9C4C6E30B9722 /* Pods-ProximiioWebViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProximiioWebViewDemo.release.xcconfig"; path = "Target Support Files/Pods-ProximiioWebViewDemo/Pods-ProximiioWebViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		11FC1BE7815D7A2F5F9F6838 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28304828AAEE893FD16EEE8F /* ProximiioWebViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoTests.swift; sourceTree = "<group>"; };
+		4A06F5356B16CB5BFA8DE940 /* ProximiioWebViewDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ProximiioWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		577FB2CAC94E69E3220B03C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		76C40729F60D4A76AF917E0C /* ProximiioWebViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoApp.swift; sourceTree = "<group>"; };
+		95CD40E900272BD2498D56FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C5238BB078011F31F469ED1 /* ProximiioWebViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoUITests.swift; sourceTree = "<group>"; };
+		C3EC58B4E8E8D4BD4E363C2A /* ProximiioWebViewDemoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ProximiioWebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC76B2A4D2DE9478A98B9138 /* ProximiioWebViewDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4AD4A44F72DF742ACEE3882 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F7A294B9FA9705C411F8FFF4 /* ProximiioWebViewDemoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ProximiioWebViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		61EC4B862E81C628009A8A26 /* Exceptions for "ProximiioWebViewDemo" folder in "ProximiioWebViewDemo" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 61B71CB52E818F9100BF958A /* ProximiioWebViewDemo */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		61B71CB82E818F9100BF958A /* ProximiioWebViewDemo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				61EC4B862E81C628009A8A26 /* Exceptions for "ProximiioWebViewDemo" folder in "ProximiioWebViewDemo" target */,
-			);
-			path = ProximiioWebViewDemo;
-			sourceTree = "<group>";
-		};
-		61B71CC92E818F9300BF958A /* ProximiioWebViewDemoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProximiioWebViewDemoTests;
-			sourceTree = "<group>";
-		};
-		61B71CD32E818F9300BF958A /* ProximiioWebViewDemoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ProximiioWebViewDemoUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		61B71CB32E818F9100BF958A /* Frameworks */ = {
+		7B1BEAA17625805B5539D9B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3997723BA7A4A1E922B134D /* Pods_ProximiioWebViewDemo.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61B71CC32E818F9300BF958A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61B71CCD2E818F9300BF958A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F8F5B06C48C6BB959A319AA1 /* Proximiio in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		59161683A38A5F36A4796402 /* Frameworks */ = {
+		3AE43E984FA8EA6AF70E7863 /* ProximiioWebViewDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				61EC4B612E81B33E009A8A26 /* CrystDBCipher.framework */,
-				61EC4AF22E819FCD009A8A26 /* CrystDBCipher.framework */,
-				6162661A2E81956900F3E5E0 /* CrystDBCipher.framework */,
-				616265DC2E81946100F3E5E0 /* CrystDBCipher.framework */,
-				616265BB2E8193A100F3E5E0 /* CrystDBCipher.framework */,
-				616265B72E81939A00F3E5E0 /* Proximiio.xcframework */,
-				79B336DA41F0AD1E584875FB /* Pods_ProximiioWebViewDemo.framework */,
+				9C5238BB078011F31F469ED1 /* ProximiioWebViewDemoUITests.swift */,
+				EC76B2A4D2DE9478A98B9138 /* ProximiioWebViewDemoUITestsLaunchTests.swift */,
 			);
-			name = Frameworks;
+			path = ProximiioWebViewDemoUITests;
 			sourceTree = "<group>";
 		};
-		61B71CAD2E818F9100BF958A = {
+		5A84B1591CDFF19EDCDCD1F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				61B71CB82E818F9100BF958A /* ProximiioWebViewDemo */,
-				61B71CC92E818F9300BF958A /* ProximiioWebViewDemoTests */,
-				61B71CD32E818F9300BF958A /* ProximiioWebViewDemoUITests */,
-				61B71CB72E818F9100BF958A /* Products */,
-				9AE468B57DD76427A26A23B3 /* Pods */,
-				59161683A38A5F36A4796402 /* Frameworks */,
+				11FC1BE7815D7A2F5F9F6838 /* Preview Assets.xcassets */,
 			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		61B71CB72E818F9100BF958A /* Products */ = {
+		804AE54BFB0ADF46E6D5E960 /* ProximiioWebViewDemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				61B71CB62E818F9100BF958A /* ProximiioWebViewDemo.app */,
-				61B71CC62E818F9300BF958A /* ProximiioWebViewDemoTests.xctest */,
-				61B71CD02E818F9300BF958A /* ProximiioWebViewDemoUITests.xctest */,
+				28304828AAEE893FD16EEE8F /* ProximiioWebViewDemoTests.swift */,
+			);
+			path = ProximiioWebViewDemoTests;
+			sourceTree = "<group>";
+		};
+		A49265DFF5C4E95E7A93040A /* ProximiioWebViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				95CD40E900272BD2498D56FE /* Assets.xcassets */,
+				577FB2CAC94E69E3220B03C5 /* ContentView.swift */,
+				F4AD4A44F72DF742ACEE3882 /* Info.plist */,
+				76C40729F60D4A76AF917E0C /* ProximiioWebViewDemoApp.swift */,
+				5A84B1591CDFF19EDCDCD1F1 /* Preview Content */,
+			);
+			path = ProximiioWebViewDemo;
+			sourceTree = "<group>";
+		};
+		B9AB6D13C7C3513B77161075 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A06F5356B16CB5BFA8DE940 /* ProximiioWebViewDemo.app */,
+				C3EC58B4E8E8D4BD4E363C2A /* ProximiioWebViewDemoTests.xctest */,
+				F7A294B9FA9705C411F8FFF4 /* ProximiioWebViewDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AE468B57DD76427A26A23B3 /* Pods */ = {
+		EBA252AD44D8CFC754578287 = {
 			isa = PBXGroup;
 			children = (
-				8AB71E657523D131222AED4B /* Pods-ProximiioWebViewDemo.debug.xcconfig */,
-				B1AADB0BCFC9C4C6E30B9722 /* Pods-ProximiioWebViewDemo.release.xcconfig */,
+				A49265DFF5C4E95E7A93040A /* ProximiioWebViewDemo */,
+				804AE54BFB0ADF46E6D5E960 /* ProximiioWebViewDemoTests */,
+				3AE43E984FA8EA6AF70E7863 /* ProximiioWebViewDemoUITests */,
+				B9AB6D13C7C3513B77161075 /* Products */,
 			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61B71CB52E818F9100BF958A /* ProximiioWebViewDemo */ = {
+		38EB8727A69E448E2A181A62 /* ProximiioWebViewDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61B71CDA2E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemo" */;
+			buildConfigurationList = C6DA30EB3D4423733E841BEC /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoUITests" */;
 			buildPhases = (
-				BBA85C3231547DA02847DB99 /* [CP] Check Pods Manifest.lock */,
-				61B71CB22E818F9100BF958A /* Sources */,
-				61B71CB32E818F9100BF958A /* Frameworks */,
-				61B71CB42E818F9100BF958A /* Resources */,
-				675CC8B52D7008F8DEA59D3B /* [CP] Embed Pods Frameworks */,
+				FC45055E03D4B93ED7CAED87 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				61B71CB82E818F9100BF958A /* ProximiioWebViewDemo */,
-			);
-			name = ProximiioWebViewDemo;
-			productName = ProximiioWebViewDemo;
-			productReference = 61B71CB62E818F9100BF958A /* ProximiioWebViewDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		61B71CC52E818F9300BF958A /* ProximiioWebViewDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 61B71CDD2E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoTests" */;
-			buildPhases = (
-				61B71CC22E818F9300BF958A /* Sources */,
-				61B71CC32E818F9300BF958A /* Frameworks */,
-				61B71CC42E818F9300BF958A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				61B71CC82E818F9300BF958A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				61B71CC92E818F9300BF958A /* ProximiioWebViewDemoTests */,
-			);
-			name = ProximiioWebViewDemoTests;
-			productName = ProximiioWebViewDemoTests;
-			productReference = 61B71CC62E818F9300BF958A /* ProximiioWebViewDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		61B71CCF2E818F9300BF958A /* ProximiioWebViewDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 61B71CE02E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoUITests" */;
-			buildPhases = (
-				61B71CCC2E818F9300BF958A /* Sources */,
-				61B71CCD2E818F9300BF958A /* Frameworks */,
-				61B71CCE2E818F9300BF958A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				61B71CD22E818F9300BF958A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				61B71CD32E818F9300BF958A /* ProximiioWebViewDemoUITests */,
+				A17649EED4ADF9C8FDA921D5 /* PBXTargetDependency */,
 			);
 			name = ProximiioWebViewDemoUITests;
+			packageProductDependencies = (
+			);
 			productName = ProximiioWebViewDemoUITests;
-			productReference = 61B71CD02E818F9300BF958A /* ProximiioWebViewDemoUITests.xctest */;
+			productReference = F7A294B9FA9705C411F8FFF4 /* ProximiioWebViewDemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		4886AEBD6BA8D7CC81942E48 /* ProximiioWebViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E031759D864BC425FE5A460 /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemo" */;
+			buildPhases = (
+				75400BC27B6D06893D722D13 /* Sources */,
+				775BAC372F090A53D026ECB5 /* Resources */,
+				7B1BEAA17625805B5539D9B7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProximiioWebViewDemo;
+			packageProductDependencies = (
+				A2DB13BE793B3BD35CF3C66F /* Proximiio */,
+			);
+			productName = ProximiioWebViewDemo;
+			productReference = 4A06F5356B16CB5BFA8DE940 /* ProximiioWebViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1FBB8311F6E31683C849850 /* ProximiioWebViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F37C2E730E06B4D54DA8802 /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoTests" */;
+			buildPhases = (
+				DEC20AD2E6776C5261D15CB4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				923185A5C0AB127824E68195 /* PBXTargetDependency */,
+			);
+			name = ProximiioWebViewDemoTests;
+			packageProductDependencies = (
+			);
+			productName = ProximiioWebViewDemoTests;
+			productReference = C3EC58B4E8E8D4BD4E363C2A /* ProximiioWebViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		61B71CAE2E818F9100BF958A /* Project object */ = {
+		80873026DC658B7481B1B274 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					61B71CB52E818F9100BF958A = {
-						CreatedOnToolsVersion = 16.0;
+					38EB8727A69E448E2A181A62 = {
+						DevelopmentTeam = 2ULWCJMDBJ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4886AEBD6BA8D7CC81942E48;
 					};
-					61B71CC52E818F9300BF958A = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 61B71CB52E818F9100BF958A;
+					4886AEBD6BA8D7CC81942E48 = {
+						DevelopmentTeam = 2ULWCJMDBJ;
+						ProvisioningStyle = Automatic;
 					};
-					61B71CCF2E818F9300BF958A = {
-						CreatedOnToolsVersion = 16.0;
-						TestTargetID = 61B71CB52E818F9100BF958A;
+					A1FBB8311F6E31683C849850 = {
+						DevelopmentTeam = 2ULWCJMDBJ;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 61B71CB12E818F9100BF958A /* Build configuration list for PBXProject "ProximiioWebViewDemo" */;
+			buildConfigurationList = A251DB805924AEC8B4BA240D /* Build configuration list for PBXProject "ProximiioWebViewDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 61B71CAD2E818F9100BF958A;
+			mainGroup = EBA252AD44D8CFC754578287;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				57B50F2111822A9A70DE03BE /* XCRemoteSwiftPackageReference "proximiio-ios-sdk-v6" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 61B71CB72E818F9100BF958A /* Products */;
+			productRefGroup = B9AB6D13C7C3513B77161075 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61B71CB52E818F9100BF958A /* ProximiioWebViewDemo */,
-				61B71CC52E818F9300BF958A /* ProximiioWebViewDemoTests */,
-				61B71CCF2E818F9300BF958A /* ProximiioWebViewDemoUITests */,
+				4886AEBD6BA8D7CC81942E48 /* ProximiioWebViewDemo */,
+				A1FBB8311F6E31683C849850 /* ProximiioWebViewDemoTests */,
+				38EB8727A69E448E2A181A62 /* ProximiioWebViewDemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		61B71CB42E818F9100BF958A /* Resources */ = {
+		775BAC372F090A53D026ECB5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61B71CC42E818F9300BF958A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61B71CCE2E818F9300BF958A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A6CD3D413DB889197EFEFCD5 /* Assets.xcassets in Resources */,
+				198BFF904F1E4E12D0C44832 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		675CC8B52D7008F8DEA59D3B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProximiioWebViewDemo/Pods-ProximiioWebViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProximiioWebViewDemo/Pods-ProximiioWebViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProximiioWebViewDemo/Pods-ProximiioWebViewDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBA85C3231547DA02847DB99 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ProximiioWebViewDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		61B71CB22E818F9100BF958A /* Sources */ = {
+		75400BC27B6D06893D722D13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1444549C71B61FC830D3E8F /* ContentView.swift in Sources */,
+				77937F10DBD4B11F3795D273 /* ProximiioWebViewDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61B71CC22E818F9300BF958A /* Sources */ = {
+		DEC20AD2E6776C5261D15CB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A8845D9DFB90FB785C90ADC /* ProximiioWebViewDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61B71CCC2E818F9300BF958A /* Sources */ = {
+		FC45055E03D4B93ED7CAED87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2477900A5FA828F98AEF88 /* ProximiioWebViewDemoUITests.swift in Sources */,
+				015E48D499A1CEDF669FB748 /* ProximiioWebViewDemoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		61B71CC82E818F9300BF958A /* PBXTargetDependency */ = {
+		923185A5C0AB127824E68195 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 61B71CB52E818F9100BF958A /* ProximiioWebViewDemo */;
-			targetProxy = 61B71CC72E818F9300BF958A /* PBXContainerItemProxy */;
+			target = 4886AEBD6BA8D7CC81942E48 /* ProximiioWebViewDemo */;
+			targetProxy = C9EA51F27019FDEA65A0429D /* PBXContainerItemProxy */;
 		};
-		61B71CD22E818F9300BF958A /* PBXTargetDependency */ = {
+		A17649EED4ADF9C8FDA921D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 61B71CB52E818F9100BF958A /* ProximiioWebViewDemo */;
-			targetProxy = 61B71CD12E818F9300BF958A /* PBXContainerItemProxy */;
+			target = 4886AEBD6BA8D7CC81942E48 /* ProximiioWebViewDemo */;
+			targetProxy = 94D6D581870838079793E3A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		61B71CD82E818F9300BF958A /* Debug */ = {
+		2A1B6D7122E2961FA08D3B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ProximiioWebViewDemo;
+			};
+			name = Release;
+		};
+		326A149B0BB21A13E58C70ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"ProximiioWebViewDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ProximiioWebViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemo;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BF38A45083FEE5D21EF932C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximiioWebViewDemo.app/ProximiioWebViewDemo";
+			};
+			name = Debug;
+		};
+		628FCADEE47CA09BE882F838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -392,18 +367,19 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
 					"$(inherited)",
+					"DEBUG=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -411,25 +387,64 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		61B71CD92E818F9300BF958A /* Release */ = {
+		691757867001D436A6077ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_ASSET_PATHS = "\"ProximiioWebViewDemo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ProximiioWebViewDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemo;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AE2075B60801931A50F361A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximiioWebViewDemo.app/ProximiioWebViewDemo";
+			};
+			name = Release;
+		};
+		AC0E48309A87A8FB4EEAED41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -455,12 +470,13 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -468,206 +484,93 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				VALIDATE_PRODUCT = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		61B71CDB2E818F9300BF958A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AB71E657523D131222AED4B /* Pods-ProximiioWebViewDemo.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProximiioWebViewDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProximiioWebViewDemo/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "bluetooth always usage description";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Test;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Test 2";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Test 3";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Test 4";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		61B71CDC2E818F9300BF958A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1AADB0BCFC9C4C6E30B9722 /* Pods-ProximiioWebViewDemo.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ProximiioWebViewDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProximiioWebViewDemo/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "bluetooth always usage description";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = Test;
-				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Test 2";
-				INFOPLIST_KEY_NSLocationUsageDescription = "Test 3";
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Test 4";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		61B71CDE2E818F9300BF958A /* Debug */ = {
+		DCA8A1AA12540AD7D1B1EF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximiioWebViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProximiioWebViewDemo";
-			};
-			name = Debug;
-		};
-		61B71CDF2E818F9300BF958A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProximiioWebViewDemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ProximiioWebViewDemo";
-			};
-			name = Release;
-		};
-		61B71CE12E818F9300BF958A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ProximiioWebViewDemo;
 			};
 			name = Debug;
-		};
-		61B71CE22E818F9300BF958A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2ULWCJMDBJ;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.proximi.ProximiioWebViewDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ProximiioWebViewDemo;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61B71CB12E818F9100BF958A /* Build configuration list for PBXProject "ProximiioWebViewDemo" */ = {
+		0F37C2E730E06B4D54DA8802 /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B71CD82E818F9300BF958A /* Debug */,
-				61B71CD92E818F9300BF958A /* Release */,
+				5BF38A45083FEE5D21EF932C /* Debug */,
+				7AE2075B60801931A50F361A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		61B71CDA2E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemo" */ = {
+		8E031759D864BC425FE5A460 /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B71CDB2E818F9300BF958A /* Debug */,
-				61B71CDC2E818F9300BF958A /* Release */,
+				326A149B0BB21A13E58C70ED /* Debug */,
+				691757867001D436A6077ED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		61B71CDD2E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoTests" */ = {
+		A251DB805924AEC8B4BA240D /* Build configuration list for PBXProject "ProximiioWebViewDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B71CDE2E818F9300BF958A /* Debug */,
-				61B71CDF2E818F9300BF958A /* Release */,
+				628FCADEE47CA09BE882F838 /* Debug */,
+				AC0E48309A87A8FB4EEAED41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		61B71CE02E818F9300BF958A /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoUITests" */ = {
+		C6DA30EB3D4423733E841BEC /* Build configuration list for PBXNativeTarget "ProximiioWebViewDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				61B71CE12E818F9300BF958A /* Debug */,
-				61B71CE22E818F9300BF958A /* Release */,
+				DCA8A1AA12540AD7D1B1EF88 /* Debug */,
+				2A1B6D7122E2961FA08D3B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57B50F2111822A9A70DE03BE /* XCRemoteSwiftPackageReference "proximiio-ios-sdk-v6" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/proximiio/proximiio-ios-sdk-v6";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A2DB13BE793B3BD35CF3C66F /* Proximiio */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57B50F2111822A9A70DE03BE /* XCRemoteSwiftPackageReference "proximiio-ios-sdk-v6" */;
+			productName = Proximiio;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 61B71CAE2E818F9100BF958A /* Project object */;
+	rootObject = 80873026DC658B7481B1B274 /* Project object */;
 }

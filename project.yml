@@ -1,0 +1,102 @@
+name: ProximiioWebViewDemo
+options:
+  bundleIdPrefix: io.proximi
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    DEVELOPMENT_TEAM: 2ULWCJMDBJ
+    CODE_SIGN_STYLE: Automatic
+
+packages:
+  # Proximi.io iOS SDK v6 (SPM-only). `import Proximiio` re-exports every
+  # subsystem (core, positioning, PDR, geofencing, wayfinding, offline, devices).
+  # For local SDK development swap `url`/`branch` for: `path: ../proximiio-ios-sdk-v6`.
+  Proximiio:
+    url: https://github.com/proximiio/proximiio-ios-sdk-v6
+    branch: master
+
+targets:
+  ProximiioWebViewDemo:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: ProximiioWebViewDemo
+    dependencies:
+      - package: Proximiio
+        product: Proximiio
+    info:
+      path: ProximiioWebViewDemo/Info.plist
+      properties:
+        CFBundleDisplayName: Proximi.io WebView
+        UILaunchScreen: {}
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+        # The demo loads a remote map URL; keep ATS relaxed for local dev servers.
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+          NSAllowsLocalNetworking: true
+        # Proximi.io SDK v6 permissions (see MIGRATION.md §2 "Info.plist keys").
+        NSLocationWhenInUseUsageDescription: Indoor positioning needs your location while you use the map.
+        NSLocationAlwaysAndWhenInUseUsageDescription: Indoor positioning needs your location to keep the map updated.
+        NSBluetoothAlwaysUsageDescription: Bluetooth is used to detect indoor positioning beacons.
+        NSMotionUsageDescription: Motion data improves indoor positioning between beacons (pedestrian dead reckoning).
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.proximi.ProximiioWebViewDemo
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        ENABLE_PREVIEWS: YES
+        DEVELOPMENT_ASSET_PATHS: '"ProximiioWebViewDemo/Preview Content"'
+        SWIFT_STRICT_CONCURRENCY: minimal
+
+  ProximiioWebViewDemoTests:
+    type: bundle.unit-test
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: ProximiioWebViewDemoTests
+    dependencies:
+      - target: ProximiioWebViewDemo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.proximi.ProximiioWebViewDemoTests
+
+  ProximiioWebViewDemoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: ProximiioWebViewDemoUITests
+    dependencies:
+      - target: ProximiioWebViewDemo
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: io.proximi.ProximiioWebViewDemoUITests
+        TEST_TARGET_NAME: ProximiioWebViewDemo
+
+schemes:
+  ProximiioWebViewDemo:
+    build:
+      targets:
+        ProximiioWebViewDemo: all
+        ProximiioWebViewDemoTests: [test]
+        ProximiioWebViewDemoUITests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - ProximiioWebViewDemoTests
+        - ProximiioWebViewDemoUITests
+    archive:
+      config: Release

@@ -1,5 +1,44 @@
-# Proximi.io IOS Native WebView Demo
+# Proximi.io iOS Native WebView Demo
+
+Native SwiftUI shell around a `WKWebView` that shows a Proximi.io web map and
+feeds it the device position from the **Proximi.io iOS SDK v6** (Swift Package,
+`import Proximiio`). Positions, floor changes and a simple accelerometer-based
+"is moving" flag are posted to the page as:
+
+    window.postMessage({ type: "SET_LOCATION", latitude, longitude, level,
+                         accelAvailable, isInMovement }, "*")
 
 ## Usage
 
-replace "INSERT_PROXIMIIO_APPLICATION_TOKEN" and "INSERT_MAP_URL" in ProximiioWebViewDemo/ContentView.swift
+1. Replace `INSERT_PROXIMIIO_APPLICATION_TOKEN` and `INSERT_MAP_URL` in
+   `ProximiioWebViewDemo/ContentView.swift` (`DemoConfiguration`).
+2. Open `ProximiioWebViewDemo.xcodeproj` and run on a device (positioning needs
+   real Bluetooth / location / motion hardware).
+
+The SDK is resolved by Swift Package Manager from
+`https://github.com/proximiio/proximiio-ios-sdk-v6` (branch `master`). No
+CocoaPods. To develop against a local SDK checkout, change the `Proximiio`
+package in `project.yml` to `path: ../proximiio-ios-sdk-v6`.
+
+## Project
+
+`project.yml` (XcodeGen) is the source of truth; the checked-in
+`ProximiioWebViewDemo.xcodeproj` is generated from it — after editing
+`project.yml` run `xcodegen generate` (`brew install xcodegen`).
+
+Info.plist usage descriptions are declared in `project.yml` (`info.properties`):
+location when-in-use / always, Bluetooth (beacons) and Motion (pedestrian
+dead-reckoning).
+
+## SDK v6 flow (what replaced the 5.x delegate)
+
+    let sdk = try Proximiio(configuration: ProximiioConfiguration(token: token))
+    _ = await sdk.requestPermissions(always: false)
+    _ = await sdk.requestMotionPermission()      // PDR needs Motion & Fitness
+    try await sdk.authenticate()
+    try await sdk.start()
+    await sdk.enablePdr()                        // 5.x ProximiioPDRProcessor
+    for await update in await sdk.positions()   { … }   // proximiioPositionUpdated
+    for await change in await sdk.floorChanges() { … }  // proximiioFloorChanged
+
+See the SDK's `MIGRATION.md` for the full 5.x → 6.0 mapping.
