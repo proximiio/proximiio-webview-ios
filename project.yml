@@ -42,6 +42,13 @@ targets:
           - UIInterfaceOrientationPortrait
           - UIInterfaceOrientationLandscapeLeft
           - UIInterfaceOrientationLandscapeRight
+        # iPad multitasking (App Store validation) requires all four orientations
+        # unless UIRequiresFullScreen is set.
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
         # The demo loads a remote map URL; keep ATS relaxed for local dev servers.
         NSAppTransportSecurity:
           NSAllowsArbitraryLoads: true
