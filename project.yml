@@ -26,6 +26,9 @@ targets:
     type: application
     platform: iOS
     deploymentTarget: "16.0"
+    configFiles:
+      Debug: Config/App.xcconfig
+      Release: Config/App.xcconfig
     sources:
       - path: ProximiioWebViewDemo
     dependencies:
@@ -53,6 +56,10 @@ targets:
         NSAppTransportSecurity:
           NSAllowsArbitraryLoads: true
           NSAllowsLocalNetworking: true
+        # Build-time secrets from Config/Secrets.xcconfig (untracked), read at runtime
+        # by DemoConfiguration. Empty when the file is missing.
+        ProximiioApplicationToken: $(PROXIMIIO_APPLICATION_TOKEN)
+        ProximiioMapURL: $(PROXIMIIO_MAP_URL)
         # Proximi.io SDK v6 permissions (see MIGRATION.md §2 "Info.plist keys").
         NSLocationWhenInUseUsageDescription: Indoor positioning needs your location while you use the map.
         NSLocationAlwaysAndWhenInUseUsageDescription: Indoor positioning needs your location to keep the map updated.

@@ -1,0 +1,7 @@
+// Base build configuration for the demo. Secrets (token, map URL) come from the
+// untracked Config/Secrets.xcconfig — copy Config/Secrets.example.xcconfig.
+// Missing values leave the Info.plist keys empty; the app then shows a hint
+// instead of crashing.
+PROXIMIIO_APPLICATION_TOKEN =
+PROXIMIIO_MAP_URL =
+#include? "Secrets.xcconfig"

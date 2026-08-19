@@ -40,6 +40,7 @@
 		4A06F5356B16CB5BFA8DE940 /* ProximiioWebViewDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ProximiioWebViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577FB2CAC94E69E3220B03C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76C40729F60D4A76AF917E0C /* ProximiioWebViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoApp.swift; sourceTree = "<group>"; };
+		7B73ED369F21AB2527E10EE6 /* App.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = App.xcconfig; sourceTree = "<group>"; };
 		95CD40E900272BD2498D56FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C5238BB078011F31F469ED1 /* ProximiioWebViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximiioWebViewDemoUITests.swift; sourceTree = "<group>"; };
 		C3EC58B4E8E8D4BD4E363C2A /* ProximiioWebViewDemoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ProximiioWebViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09AB9E803E8869BCB93F0E5D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				7B73ED369F21AB2527E10EE6 /* App.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		3AE43E984FA8EA6AF70E7863 /* ProximiioWebViewDemoUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +119,7 @@
 		EBA252AD44D8CFC754578287 = {
 			isa = PBXGroup;
 			children = (
+				09AB9E803E8869BCB93F0E5D /* Config */,
 				A49265DFF5C4E95E7A93040A /* ProximiioWebViewDemo */,
 				804AE54BFB0ADF46E6D5E960 /* ProximiioWebViewDemoTests */,
 				3AE43E984FA8EA6AF70E7863 /* ProximiioWebViewDemoUITests */,
@@ -298,6 +308,7 @@
 		};
 		326A149B0BB21A13E58C70ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B73ED369F21AB2527E10EE6 /* App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -401,6 +412,7 @@
 		};
 		691757867001D436A6077ED3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B73ED369F21AB2527E10EE6 /* App.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

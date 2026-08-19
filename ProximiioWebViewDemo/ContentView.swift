@@ -5,10 +5,26 @@ import Proximiio
 
 // MARK: - Configuration
 
-/// Replace before running (see README).
-private enum DemoConfiguration {
-    static let proximiioToken = "INSERT_PROXIMIIO_APPLICATION_TOKEN"
-    static let mapURL = URL(string: "INSERT_MAP_URL")!
+/// Token and map URL are injected at build time from the untracked
+/// `Config/Secrets.xcconfig` (copy `Config/Secrets.example.xcconfig`) into the
+/// Info.plist keys `ProximiioApplicationToken` / `ProximiioMapURL`.
+enum DemoConfiguration {
+    static var proximiioToken: String? {
+        infoString("ProximiioApplicationToken")
+    }
+
+    static var mapURL: URL? {
+        infoString("ProximiioMapURL").flatMap(URL.init(string:))
+    }
+
+    static let missingSecretsHint =
+        "Missing Config/Secrets.xcconfig — copy Secrets.example.xcconfig and set PROXIMIIO_APPLICATION_TOKEN / PROXIMIIO_MAP_URL"
+
+    private static func infoString(_ key: String) -> String? {
+        guard let raw = Bundle.main.object(forInfoDictionaryKey: key) as? String else { return nil }
+        let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmed.isEmpty ? nil : trimmed
+    }
 }
 
 // MARK: - WebView
@@ -82,8 +98,13 @@ final class ProximiioManager: NSObject, ObservableObject {
     // MARK: SDK lifecycle (configure → permissions → authenticate → start → streams)
 
     func startProximiio() async {
+        guard let token = DemoConfiguration.proximiioToken else {
+            authStatus = DemoConfiguration.missingSecretsHint
+            print(DemoConfiguration.missingSecretsHint)
+            return
+        }
         do {
-            let configuration = ProximiioConfiguration(token: DemoConfiguration.proximiioToken)
+            let configuration = ProximiioConfiguration(token: token)
             let sdk = try Proximiio(configuration: configuration)
             self.sdk = sdk
 
@@ -228,9 +249,17 @@ struct ContentView: View {
 
     var body: some View {
         GeometryReader { geometry in
-            WebView(url: DemoConfiguration.mapURL, proximiioManager: proximiioManager)
-                .frame(width: geometry.size.width, height: geometry.size.height)
-                .clipped()
+            if let mapURL = DemoConfiguration.mapURL {
+                WebView(url: mapURL, proximiioManager: proximiioManager)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+                    .clipped()
+            } else {
+                Text(DemoConfiguration.missingSecretsHint)
+                    .font(.footnote)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .frame(width: geometry.size.width, height: geometry.size.height)
+            }
         }
         .ignoresSafeArea(.all, edges: .all)
         .overlay(alignment: .bottom) {

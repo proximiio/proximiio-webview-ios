@@ -10,8 +10,13 @@ feeds it the device position from the **Proximi.io iOS SDK v6** (Swift Package,
 
 ## Usage
 
-1. Replace `INSERT_PROXIMIIO_APPLICATION_TOKEN` and `INSERT_MAP_URL` in
-   `ProximiioWebViewDemo/ContentView.swift` (`DemoConfiguration`).
+1. `cp Config/Secrets.example.xcconfig Config/Secrets.xcconfig` and set
+   `PROXIMIIO_APPLICATION_TOKEN` and `PROXIMIIO_MAP_URL` (write the URL as
+   `https:/$()/host/path` — `//` starts a comment in xcconfig). The file is
+   gitignored; its values are baked into the Info.plist keys
+   `ProximiioApplicationToken` / `ProximiioMapURL` at build time and read by
+   `DemoConfiguration` at runtime. Without it the app shows a hint instead of
+   crashing.
 2. Open `ProximiioWebViewDemo.xcodeproj` and run on a device (positioning needs
    real Bluetooth / location / motion hardware).
 

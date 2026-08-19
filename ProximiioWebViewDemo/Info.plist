@@ -35,6 +35,10 @@
 	<string>Indoor positioning needs your location while you use the map.</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Motion data improves indoor positioning between beacons (pedestrian dead reckoning).</string>
+	<key>ProximiioApplicationToken</key>
+	<string>$(PROXIMIIO_APPLICATION_TOKEN)</string>
+	<key>ProximiioMapURL</key>
+	<string>$(PROXIMIIO_MAP_URL)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
