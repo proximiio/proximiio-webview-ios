@@ -29,12 +29,18 @@
 	</dict>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Bluetooth is used to detect indoor positioning beacons.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera can assist ultra-wideband direction finding for indoor positioning.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Indoor positioning needs your location to keep the map updated.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Indoor positioning needs your location while you use the map.</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Motion data improves indoor positioning between beacons (pedestrian dead reckoning).</string>
+	<key>NSNearbyInteractionAllowOnceUsageDescription</key>
+	<string>Ultra-wideband ranging to Proximi.io anchors improves indoor positioning accuracy.</string>
+	<key>NSNearbyInteractionUsageDescription</key>
+	<string>Ultra-wideband ranging to Proximi.io anchors improves indoor positioning accuracy.</string>
 	<key>ProximiioApplicationToken</key>
 	<string>$(PROXIMIIO_APPLICATION_TOKEN)</string>
 	<key>ProximiioMapURL</key>

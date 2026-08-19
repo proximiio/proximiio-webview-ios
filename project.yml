@@ -65,6 +65,12 @@ targets:
         NSLocationAlwaysAndWhenInUseUsageDescription: Indoor positioning needs your location to keep the map updated.
         NSBluetoothAlwaysUsageDescription: Bluetooth is used to detect indoor positioning beacons.
         NSMotionUsageDescription: Motion data improves indoor positioning between beacons (pedestrian dead reckoning).
+        # The SDK links NearbyInteraction (UWB anchors) and ARKit (camera-assisted
+        # UWB direction); App Store validation requires purpose strings for any
+        # referenced protected API even if this demo never triggers them.
+        NSNearbyInteractionUsageDescription: Ultra-wideband ranging to Proximi.io anchors improves indoor positioning accuracy.
+        NSNearbyInteractionAllowOnceUsageDescription: Ultra-wideband ranging to Proximi.io anchors improves indoor positioning accuracy.
+        NSCameraUsageDescription: The camera can assist ultra-wideband direction finding for indoor positioning.
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: io.proximi.ProximiioWebViewDemo
